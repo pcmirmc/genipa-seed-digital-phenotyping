@@ -1,0 +1,16 @@
+name: genipa-seed-digital-phenotyping
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy>=1.24
+  - pandas>=2.0
+  - matplotlib>=3.7
+  - seaborn>=0.13
+  - scikit-learn>=1.3
+  - statsmodels>=0.14
+  - jupyter
+  - pip
+  - pip:
+      - opencv-python>=4.8
+

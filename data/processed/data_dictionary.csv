@@ -1,0 +1,25 @@
+column,description,type,source
+seed_id,Unique seed identifier combining lot/image and seed file name.,string,Original semente_com_lote
+lot,Seed lot/locality numeric identifier.,integer,Original Localities
+image_id,Source image or tray identifier.,string,Original imagem
+seed_image,Segmented seed image filename.,string,Original semente
+grid_row,Seed row position in the acquisition grid.,integer,Original linha
+grid_column,Seed column position in the acquisition grid.,integer,Original coluna
+calibration_px_per_cm,Image calibration factor in pixels per centimeter.,float,Original proporcao
+area_px,Seed projected area in pixels.,float,Original area_px
+perimeter_px,Seed perimeter in pixels.,float,Original perimetro_px
+width_px,Bounding-box width in pixels.,integer,Original largura_px
+height_px,Bounding-box height in pixels.,integer,Original altura_px
+centroid_x_px,Seed centroid x coordinate in pixels.,float,Original cx
+centroid_y_px,Seed centroid y coordinate in pixels.,float,Original cy
+area_cm2,Seed projected area in square centimeters.,float,Original area_cm2
+area_mm2,Seed projected area in square millimeters.,float,Original Area
+perimeter_cm,Seed perimeter in centimeters.,float,Original perimetro_cm
+perimeter_mm,Seed perimeter in millimeters.,float,Original Perimeter
+width_cm,Seed width in centimeters.,float,Original largura_cm
+height_cm,Seed height in centimeters.,float,Original altura_cm
+length_mm,Seed length in millimeters used for morphometric analysis.,float,Original Length
+width_mm,Seed width in millimeters used for morphometric analysis.,float,Original Width
+germination_observed,"Observed germination class from the source dataset: 1 germinated, 0 non-germinated.",binary integer,Original Germination
+root_length_mm,Measured root length in millimeters; one source record has a missing value.,float,Original Root_Length
+germinated_root_gt_35mm,"Derived classification target: 1 when root_length_mm > 35.0, else 0.",binary integer,Derived

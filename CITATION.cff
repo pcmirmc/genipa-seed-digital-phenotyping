@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite the associated article and this repository."
+title: "Genipa Seed Digital Phenotyping"
+version: 0.1.0
+date-released: 2026-05-17
+
+authors:
+  - family-names: "Morebise"
+    given-names: "Akinmola Solomon"
+  - family-names: "Nana"
+    given-names: "Hans Richie Tchouckoua"
+  - family-names: "Azevedo"
+    given-names: "Samuel Ribeiro de"
+  - family-names: "Cruz"
+    given-names: "Claudemir Mota da"
+  - family-names: "Barbosa"
+    given-names: "Rafael Marani"
+
+repository-code: "https://github.com/claudemirmota/genipa-seed-digital-phenotyping"
+
+keywords:
+  - Genipa americana
+  - seed phenotyping
+  - digital morphometry
+  - post-germinative root development
+  - germination performance
+  - seed-lot differentiation
+  - Random Forest
+  - Linear SVM
+  - digital image analysis
+  - machine learning
+
+license: MIT
