@@ -43,13 +43,13 @@ python -m pip install -r requirements.txt
 Open and run the self-contained notebook:
 
 ```bash
-jupyter notebook notebooks/analysis_pipeline_self_contained.ipynb
+jupyter notebook notebooks/analysis_pipeline.ipynb
 ```
 
 The notebook is designed to be the primary reproducible artifact for GitHub and manuscript review:
 
 ```text
-notebooks/analysis_pipeline_self_contained.ipynb
+notebooks/analysis_pipeline.ipynb
 ```
 
 It does not call external project scripts. All analysis functions, model definitions, plotting utilities, and figure-display helpers are defined inside the notebook.
