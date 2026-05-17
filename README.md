@@ -1,21 +1,20 @@
 # Genipa Seed Digital Phenotyping
 
-Reproducible analysis repository for digital phenotyping of *Genipa americana* seeds and germination classification. The workflow was organized for linkage with an MDPI manuscript and includes curated tabular data, statistical analysis, machine-learning classification, figures, and output tables.
+Reproducible analysis repository for digital phenotyping of *Genipa americana* seeds and germination classification. The workflow was organized for linkage with an MDPI manuscript and is centered on a self-contained Jupyter notebook that performs data validation, statistical analysis, machine-learning classification, figure generation, and output-table export.
 
 ## Repository Structure
 
 ```text
 genipa-seed-digital-phenotyping/
 ├── data/processed/              # Curated analysis-ready CSV files
-├── code/                        # Reproducible analysis scripts
-├── notebooks/                   # End-to-end notebook pipeline
-├── figures/                     # Manuscript-ready PDF figures
+├── notebooks/                   # Self-contained reproducible notebook
+├── figures/                     # Manuscript-ready PDF figures and PNG previews
 └── outputs/                     # Model and statistical result tables
 ```
 
 ## Analysis Overview
 
-The current pipeline:
+The self-contained notebook pipeline:
 
 1. Standardizes the seed morphometry and germination dataset.
 2. Removes morphometric outliers using the 1.5 IQR rule for analysis.
@@ -24,7 +23,7 @@ The current pipeline:
 5. Classifies germination using Random Forest and Linear SVM.
 6. Exports MDPI-style PDF figures and CSV result tables.
 
-The classification scripts use `germinated_root_gt_35mm` as the default target, matching the threshold-based germination definition used in the source notebook. The source `Germination` column is retained as `germination_observed` in the analytical dataset.
+The classification workflow uses `germinated_root_gt_35mm` as the default target, matching the threshold-based germination definition used in the source notebook. The source `Germination` column is retained as `germination_observed` in the analytical dataset.
 
 ## Quick Start
 
@@ -41,20 +40,19 @@ Or install with pip:
 python -m pip install -r requirements.txt
 ```
 
-Run the full scripted workflow from the repository root:
+Open and run the self-contained notebook:
 
 ```bash
-python code/02_dataset_curation.py
-python code/03_pca_manova_analysis.py
-python code/04_rf_svm_classification.py
-python code/05_generate_figures.py
+jupyter notebook notebooks/analysis_pipeline_self_contained.ipynb
 ```
 
-The notebook version is available at:
+The notebook is designed to be the primary reproducible artifact for GitHub and manuscript review:
 
 ```text
-notebooks/analysis_pipeline.ipynb
+notebooks/analysis_pipeline_self_contained.ipynb
 ```
+
+It does not call external project scripts. All analysis functions, model definitions, plotting utilities, and figure-display helpers are defined inside the notebook.
 
 ## Data
 
@@ -65,4 +63,3 @@ Lot-to-locality labels are stored in `data/processed/lot_locality_mapping.csv`. 
 ## Citation
 
 Please cite the associated article and this repository using the metadata in `CITATION.cff`. Update the placeholder author and manuscript fields before release.
-
