@@ -1,7 +1,18 @@
 cff-version: 1.2.0
-title: "genipa-seed-digital-phenotyping"
-message: "If you use this repository, please cite it."
+message: "If you use this dataset or code, please cite the associated article and this repository."
+title: "Genipa Seed Digital Phenotyping"
+version: 0.1.0
+date-released: 2026-05-17
 authors:
-  - family-names: "Mota"
+  - family-names: "TBD"
     given-names: "Claudemir"
+repository-code: "https://github.com/USERNAME/genipa-seed-digital-phenotyping"
+keywords:
+  - Genipa americana
+  - seed phenotyping
+  - germination
+  - Random Forest
+  - Linear SVM
+  - digital image analysis
 license: MIT
+
